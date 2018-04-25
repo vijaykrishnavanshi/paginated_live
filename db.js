@@ -56,7 +56,7 @@ MongoClient.connect('mongodb://localhost:27017/dummy', function(err, db) {
   for(var time = 5; time < 60 ; time+=10){
     var dataToEncode = [];
     //update this for how many docs to insert
-    var shiftStartTime = new Date();
+    var shiftStartTime = new Date('2018-04-25T06:49:26.442Z');
     var shiftEndTime = new Date(shiftStartTime);
     shiftEndTime.setMinutes(shiftEndTime.getMinutes() + time);
     var color = randomString(6);
